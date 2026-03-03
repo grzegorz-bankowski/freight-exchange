@@ -1,6 +1,6 @@
 <p align="center">
     <a href="">
-        <img src="public/screenshots/freight-exchange.jpg">
+        <img src="screenshots/freight-exchange.jpg">
     </a>
 </p>
 
@@ -19,20 +19,20 @@ If you have any feedback, please reach out to me at <grzegorz@bankowski.dev>
 ## Screenshots
 
 <p align="center">
-    <img src="public/screenshots/logging-in.jpg">
+    <img src="screenshots/logging-in.jpg">
 </p>
 <p align="center">
-    <img src="public/screenshots/find-load.jpg">
+    <img src="screenshots/find-load.jpg">
 </p>
 <p align="center">
-    <img src="public/screenshots/load-details.jpg">
+    <img src="screenshots/load-details.jpg">
 </p>
 <p align="center">
-    <img src="public/screenshots/load-order-printing.jpg">
+    <img src="screenshots/load-order-printing.jpg">
 </p>
 <p align="center">
-    <img src="public/screenshots/load-order-pdf-1.jpg">
+    <img src="screenshots/load-order-pdf-1.jpg">
 </p>
 <p align="center">
-    <img src="public/screenshots/load-order-pdf-2.jpg">
+    <img src="screenshots/load-order-pdf-2.jpg">
 </p>
