@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+.kontener {
+    padding-left: 250px;
+    z-index: 2;
+}
+
+#navbar {
+    display: none;
+}
+
+.sidebar {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    margin-top: 0;
+    overflow-y: auto;
+    background: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar a:hover:not(.active) {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.sidebar a.active {
+    background-color: rgb(18, 113, 237);
+    color: white;
+}
+
+.sidebar header {
+    background-color: white;
+    /* line-height: 70px; */
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+.sidebar header a {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar header a img {
+    vertical-align: middle;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.sidebar header a.logo {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0;
+}
+
+.sidebar header a.logo:hover {
+    background: none;
+}
+
+.navbar {
+    position: relative;
+    min-height: 70px;
+    margin: 0 40px 30px 0;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 20px 0 0 0;
+}
+
+.navbar ul {
+    list-style: none;
+    align: right;
+    text-align: right;
+}
+
+.navbar ul li {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.navbar ul li.cargo a {
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.navbar ul li.vehicle a {
+    color: white;
+    background-color: purple;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.navbar ul li.cargo a, .navbar ul li.vehicle a {
+    text-decoration: none;
+}
+
+.navbar ul li.cargo a i, .navbar ul li.vehicle a i {
+    margin-right: 10px;
+}
+
+.navbar ul li.cargo a:hover {
+    text-decoration: none;
+    background-color: sandybrown;
+    color: white;
+}
+
+.navbar ul li.vehicle a:hover {
+    text-decoration: none;
+    background-color: mediumpurple;
+    color: white;
+}
+
+.navbar ul li.company i {
+    vertical-align: middle;
+}
+
+.navbar ul li.company b {
+    height: auto;
+}
+
+main.general {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    padding-left: 10px;
+    margin-left: 50px;
+    border-left: 5px solid indigo;
+    font-size: 22px;
+}
+
+h2 {
+    font: normal 17px "Roboto";
+    font-weight: bold;
+    margin: 0 0 50px 0;
+    color: green;
+}
+
+.container {
+    position: relative;
+    max-width: 95%;
+    width: 100%;
+    background: #fff;
+    padding: 0 25px 25px 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+
+.container .form {
+    margin-top: 0;
+}
+
+section.main-content {
+    padding: 50px 50px 50px 50px;
+}
+
+@media (max-width: 1350px) {
+    .main-content {
+        padding: 20px 8px;
+    }
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: none;
+    display: block;
+    width: auto;
+    font-size: 1em;
+}
+.form-group label.right-inline {
+    text-align: right;
+    padding-right: 8px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: auto;
+}
+
+.form-group .input-control {
+    flex: 1 1 auto;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 10px;
+    margin-top: -4px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-group input:focus, .form-group select:focus {
+    background-color: lightblue;
+}
+
+button {
+    align-self: flex-start;
+    min-width: 150px;
+    padding: 5px 15px;
+    margin: 5px;
+    height: 50px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #2ca02c;
+}
+
+button:hover {
+    background: #1e7e34;
+}
+
+@media (max-width: 1350px) {
+    .form-group {
+        flex-direction: column;
+    }
+    .form-group .input-control {
+        margin-top: 2px;
+    }
+    .form-group label.right-inline {
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+
+    h1 {
+        max-width: 95%;
+        text-align: center;
+        border: 0;
+        border-radius: 4px;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        background-color: royalblue;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center; /*aligns items along the vertical axis.*/
+        justify-content: center; /*aligns items along the horizontal axis.*/
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    /* Navbar links */
+    #navbar a {
+        font-size: 10px;
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0.5rem;
+        text-decoration: none;
+        width: 13%;
+    }
+
+    .navbar {
+        text-align: center;
+        min-height: 50px;
+        padding: 1px;
+        margin: 0;
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar ul {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar ul li.company {
+        display: block;
+        margin: 10px auto;
+        z-index: 1;
+    }
+
+    .navbar ul li.cargo {
+        background-color: brown;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        padding: 10px;
+        position: fixed;
+        top: 5px;
+        right: 0.25rem;
+        z-index: 999;
+    }
+
+    .navbar ul li.cargo a {
+        padding: 0;
+        border: 0;
+    }
+
+    .navbar ul li.vehicle {
+        background-color: purple;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        padding: 10px;
+        position: fixed;
+        top: 55px;
+        right: 0.25rem;
+        z-index: 999;
+    }
+
+    .navbar ul li.vehicle a {
+        padding: 0;
+        border: 0;
+    }
+
+    .navbar ul li.cargo a i, .navbar ul li.vehicle a i {
+        margin-right: 10px;
+    }
+
+    .navbar ul li.cargo a:hover {
+        text-decoration: none;
+        background-color: brown;
+        color: white;
+    }
+
+    .navbar ul li.vehicle a:hover {
+        text-decoration: none;
+        background-color: purple;
+        color: white;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .kontener {
+        width: 100%;
+        padding-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+}

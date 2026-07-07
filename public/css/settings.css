@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar {
+    display: none;
+}
+
+.kontener {
+    padding-left: 250px;
+    z-index: 2;
+}
+
+.navbar {
+    position: relative;
+    min-height: 70px;
+    margin: 0 40px 30px 0;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 20px 0 0 0;
+}
+
+.navbar ul {
+    list-style: none;
+    align: right;
+    text-align: right;
+}
+
+.navbar ul li {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.navbar ul li.cargo a {
+    color: white;
+    background-color: brown;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.navbar ul li.vehicle a {
+    color: white;
+    background-color: purple;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.navbar ul li.cargo a, .navbar ul li.vehicle a {
+    text-decoration: none;
+}
+
+.navbar ul li.cargo a:hover {
+    text-decoration: none;
+    background-color: sandybrown;
+    color: white;
+}
+
+.navbar ul li.vehicle a:hover {
+    text-decoration: none;
+    background-color: mediumpurple;
+    color: white;
+}
+
+.navbar ul li.cargo a i, .navbar ul li.vehicle a i {
+    margin-right: 10px;
+}
+
+.navbar ul li.company i {
+    vertical-align: middle;
+}
+
+.navbar ul li.company b {
+    height: auto;
+}
+
+.sidebar {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    margin-top: 0;
+    overflow-y: auto;
+    background: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar a:hover:not(.active) {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.sidebar a.active {
+    background-color: rgb(18, 113, 237);
+    color: white;
+}
+
+.sidebar header {
+    background-color: white;
+    /* line-height: 70px; */
+    text-align: center;
+    margin:0;
+    padding: 0;
+}
+
+sidebar header a {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar header a img {
+    vertical-align: middle;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.sidebar header a.logo {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0;
+}
+
+.sidebar header a.logo:hover {
+    background: none;
+}
+
+h1 {
+    padding-left: 10px;
+    margin-left: 50px;
+    border-left: 5px solid indigo;
+    font-size: 22px;
+}
+
+h2 {
+    margin: 20px 0 0 50px;
+    font: normal 17px "Roboto";
+}
+
+main .form .left {
+    margin: 40px 0 40px 50px;
+    padding: 0;
+    width: 25%;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main .form .right {
+    margin: 40px 0 40px 0;
+    padding: 0;
+    width:70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main .form .right input {
+    background-color: #ffffcc;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-right: 50px;
+}
+
+main .form input[type=submit] {
+    margin: 30px 0 0 50px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+main hr.form {
+    margin: 0 50px 0 50px;
+    padding: 0;
+    border-top: 1px solid lightgrey;
+}
+
+main hr.main {
+    margin: 50px;
+    padding: 0;
+    border-top: 1px solid gray;
+}
+
+@media screen and (max-width: 1350px) {
+
+    h1 {
+        max-width: 95%;
+        text-align: center;
+        border: 0;
+        border-radius: 4px;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        background-color: royalblue;
+        color: white;
+        margin-top: 2rem;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center; /*aligns items along the vertical axis.*/
+        justify-content: center; /*aligns items along the horizontal axis.*/
+        z-index: 1;
+        position: fixed;
+        bottom: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    /* Navbar links */
+    #navbar a {
+        font-size: 10px;
+        display: inline-block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0.5rem;
+        text-decoration: none;
+        width: 13%;
+    }
+
+    .navbar {
+        text-align: center;
+        min-height: 50px;
+        padding: 1px;
+        margin: 0;
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar ul {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        position: relative;
+        z-index: 999;
+    }
+
+    .navbar ul li.company {
+        display: block;
+        margin: 10px auto;
+        z-index: 1;
+    }
+
+    .navbar ul li.cargo {
+        background-color: brown;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        padding: 10px;
+        position: fixed;
+        top: 5px;
+        right: 0.25rem;
+        z-index: 999;
+    }
+
+    .navbar ul li.cargo a {
+        padding: 0;
+        border: 0;
+    }
+
+    .navbar ul li.vehicle {
+        background-color: purple;
+        color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: block;
+        padding: 10px;
+        position: fixed;
+        top: 55px;
+        right: 0.25rem;
+        z-index: 999;
+    }
+
+    .navbar ul li.vehicle a {
+        padding: 0;
+        border: 0;
+    }
+
+    .navbar ul li.cargo a:visited, .navbar ul li.vehicle a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar ul li.cargo a:hover {
+        text-decoration: none;
+        background-color: brown;
+        color: white;
+    }
+
+    .navbar ul li.vehicle a:hover {
+        text-decoration: none;
+        background-color: purple;
+        color: white;
+    }
+
+    .navbar ul li.cargo a i, .navbar ul li.vehicle a i {
+        margin-right: 10px;
+    }
+
+    main.general .form {
+        max-width: 100%;
+        width: auto;
+        margin: 0 50px;
+    }
+
+    main.general .form .left {
+        max-width: 100%;
+        width: auto;
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    main.general .form .right {
+        max-width: 100%;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    main.general .form .right input {
+        max-width: 100%;
+        height: 2.5rem;
+        border-radius:4px;
+        color: rgb(55 65 81);
+        background-color: rgb(229 231 235);
+        box-sizing: border-box;
+        border:0;
+        line-height: 1.25;
+        padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+        margin-right: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .kontener {
+        padding-left: 0;
+    }
+
+    hr.main, hr.form {
+        display: none;
+    }
+
+    .right input {
+        text-align: center;
+    }
+
+    main .form input[type=submit] {
+        margin:2rem auto;
+        display: block;
+        text-align: center;
+    }
+
+    main .form input[type=submit].delete {
+        margin-bottom: 100px;
+        color:white;
+    }
+}
