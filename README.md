@@ -1,6 +1,6 @@
 <p align="center">
     <a href="">
-        <img src="public/screenshots/freight-exchange.jpg">
+        <img src="screenshots/freight-exchange.jpg">
     </a>
 </p>
 
